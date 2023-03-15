@@ -1,0 +1,45 @@
+/* selecteur universelle : *, a s'appliquer dans tout le document */ 
+
+/*va s'appliquer a tous les element*/
+/* * {
+    border: 3px solid red;
+} */
+
+html {
+    font-size: 22px;
+}
+
+button, input, textarea, select {
+    font: inherit
+}
+
+/* c'est le parents de tous les autres element se trouvant dans body */
+/* L'ensemble des proprietes declarer dans le body vont s'appliquer a tous les elements se trouvant de la body */
+/* On parle ici d'heritage en cascade  */
+
+body {
+}
+
+p {
+    color: purple;
+}
+
+/* h1 h2 : verifie si il y'a une h2 au sein d'un h1 */
+
+h1, h2 {
+    color: blue;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.mugen {
+    color: gray;
+} 
+
+/* ce n'est pas une bonne pratique */
+#second {
+    font-style: italic;
+}
