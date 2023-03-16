@@ -1,0 +1,19 @@
+body {
+    font-size: 22px;
+    /* c'est pour la police d'ecriture */
+    font-family: Arial, Helvetica, sans-serif;
+    /* espacement entre les ligne de facon horizontale */
+    line-height: 1.5;
+    background: papayawhip;
+    color: rgb(0, 0, 255 );
+}
+
+p {
+    /* a represente la transparence du contenue */
+    /* a egale a 1 >  : le contenue s'affiche normalement */
+    /* a egale a 0 le contenue devient transparent */
+    /* color: rgba(0, 0, 255, 1 ); */
+    
+    /* on peux utiliser du code hexadecimale pour definir nos couleur */
+    color: #333; 
+}  
