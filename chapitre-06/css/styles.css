@@ -1,0 +1,75 @@
+body {
+    padding: 10%;
+    font-size: 2rem;
+    /* police d'ecriture */
+    /* on peux choisir plusieurs police pour que si le navigateur n'a pas la premiere police puisse le second */
+    /* on peux importer des polices exterieur depuis google-font */
+    font-family: Arial, Helvetica, sans-serif
+} 
+
+/* input & button ne sont pas concerner par le font-size */
+/* input, button { */
+    /* du coup ces derniers vont heriter de font-size definit en haut (body) */
+    /* L'héritage provient toujours de l'élément parent par rapport à l'arbre du document, même si cet élément n'est pas le bloc englobant. */
+/*    font: inherit
+}*/
+
+p {
+
+    /* text-transforme */
+
+    /* souligner du texte */
+    /* text-decoration: underline; */
+
+    /* surligner du texte */
+    /* text-decoration: overline; */
+
+    /* barrer du texte */
+    /* text-decoration: line-through; */
+
+    /* text-transforme */
+
+    /* mettre en majuscule les premiere lettres de chaque mots */
+    /* text-transform: capitalize; */
+    
+    /* mettre en miniscule le texte */
+    /* text-transform: lowercase; */
+
+    /* mettre en majuscule le texte */
+    /* text-transform: uppercase; */
+
+    /* text-align */
+
+    /* left est la valeur par defaut pour cette propriete qui nous permet d'aligner du texte */
+    /* text-align: left; */
+
+    /* uniformiser nos texte, c'est a dire que les saut a ligne se font au meme endroit */
+    /* text-align: justify; */
+
+    /* uniformiser nos textes vers la droite */
+    /* text-align: right; */
+
+    /* espace avant le debut du paragraphe */
+    /* text-indent: 5rem; */
+
+    /* default value: 1.2 */
+    /* espacement entre les lignes de maniere verticale */
+    line-height: 1.5;
+
+    /* espacement entre les lettres */
+    /* letter-spacing: 0.1; */
+
+    /* espacement entre les mots */
+    /* word-spacing: 0.1em; */
+
+    /* valeur par defaut 400 */
+    /* c'est pour l'epaisseur de notre texte */
+    /* font-weight: normal */
+
+    /* styliser notre texte */
+    font-style: normal;
+
+
+
+
+}

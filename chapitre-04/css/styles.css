@@ -1,0 +1,26 @@
+h1 {
+    border: 2px dashed red;
+    width: 25%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+main {
+    
+    /* rem: root element => valeur par defaut definie par la navigateur : 16px */
+    /* 2rem: equivaut a x2 la valeur definie par le navigateur */
+    /* font-size: 32px */
+    font-size: 2rem;
+}
+
+p {
+    /* par defaut les navigateur, utilise 16px pour les paragraphe */
+    /* font-size: 16px; */ 
+
+    /* em contrairement au rem qui recupere directement les valeur dans le root (default values) va recuperer la valeur depuis son element parent */
+    /* font-size: 32px * 2 */
+    /* font-size: 2em; */
+
+    font-size: 2rem;
+    width: 40ch;
+}
