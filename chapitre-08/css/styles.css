@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ol {
+    /* alphabet minuscule [a,b,c] */
+    /* defaut value: decimal */
+    list-style-type: lower-alpha;
+
+    /* format [01. 02, 03] */
+    /* list-style-type: decimal-leading-zero; */
+
+    /* meme comportement que les liste non ordonner */
+    /* list-style-type: disc; */
+
+    /* on utilise des cercle pour notre liste */
+    /* list-style-type: circle; */
+
+    /* on utilise l'alphabet romain */
+    /* list-style-type: lower-roman; */
+
+    /* list-style-type: none;
+    padding: 0; */
+}
+
+ul {
+    /* nous aurons un carre */
+    list-style-type: square;
+    text-align: center;
+    /* par defaut, c'est outside */
+    list-style-position: outside;
+    color: blue;
+    line-height: 1.6;
+    /* on peux mettre des images comme etant des puces */
+    /* list-style-image: url('../images/checkmark.png'); */
+}
+
+/* on peux choisir quel element de la liste nous souhaitons attaquer */
+ul li:nth-child(2) {
+    color: red;
+}
+
+ul li::marker {
+    color: red;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "undored>>";
+}
