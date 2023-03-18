@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+   cursor: pointer;
+   color: #000;
+}
+
+/* les pseudos class represente l'etat actuelle d'un element */
+/* l'ordre des pseudo class est important */
+
+/* les liens deja visiter */
+/* a:visited {
+    color: purple;
+} */
+
+/* survoller l'element */
+/* possibilite de parcourir les elements avec des tabs, pour une meilleur accessibilite */
+a:hover, a:focus {
+    /* color: dodgerblue; */
+
+    /*1: normale, 0: completement transparent*/
+    opacity: 0.7;
+}
+
+/* lors du clique */
+a:active {
+    color: red;
+}
