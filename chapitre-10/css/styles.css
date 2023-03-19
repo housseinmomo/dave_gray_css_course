@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+}
+
+/* main is a block element */
+/* main {
+   background-color: aqua;  
+   width: 50%;
+} */
+
+/* paragraphe is a block element, create a new line */
+/* par defaut, leur largeur est de 100% */
+/* p {
+    background-color: lightgray;
+    margin: 100px 50px;
+} */
+
+/* paragraphe is a inline element, do not create new line */
+/* one ne peux pas appliquer: margin,height */
+/* .opposite { 
+    display: inline-block;
+    background-color: #333;
+    color: whitesmoke;
+    padding: 1rem;
+    margin-top: 100px;
+} */
+
+
+/* paragraphe is a block element, create a new line */
+ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #000;
+    margin: 0;
+}
+
+/* par defaut, les li sont de type bloc */
+li { 
+    /* transforme les elements bloc en inline element */
+    /* La propriété display définit le type d'affichage utilisée pour le rendu d'un élément (de bloc ou en ligne) */
+    display: inline-block;
+    /* la marge va s'appliquer de maniere horizontale (gauche, droite) */
+    margin-inline: 0.5rem;
+} 
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+    text-decoration: underline;
+}
+

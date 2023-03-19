@@ -14,7 +14,9 @@ body {
 
 nav {
     border: 2px solid #333 ;
+    /* il est relatif au font-size de son parent */
     border-radius: 2rem;
+    /* auto est remplacé par une valeur adaptée */
     margin: 0 auto 3rem;
     max-width: 600px;
     font-size: 3rem;
