@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container {
+    border: 3px dashed #333;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    /* ca va s'appliquer a ce niveau puisqu'on considere l'element parent le plus proche de l'element absolue */
+    /* L'élément est positionné dans le flux normal du document puis décalé */
+    /* Le décalage n'a pas d'impact sur la position des éléments. */
+    /* position: relative; */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* avec la position absolue, nous devons declarer une position relatif au niveau d'un element parent */
+.absolute {
+    background-color: blue;
+    /* static: valeur par defaut pour tous les elements */
+    /* Les propriétés top, right, bottom, left et z-index ne s'appliquent pas */
+
+    /* L'élément est retiré du flux normal et aucun espace n'est créé pour l'élément sur la page. */
+    /* Il est ensuite positionné par rapport à son ancêtre le plus proche qui est positionné */
+    position: absolute;
+
+    /* c'est definie par defaut*/
+    top: 0;
+    left: 125px;
+
+    /* c'est pour mettre un bloc au dessus d'un autre */
+    z-index: 1;
+}
+
+/* avec la position relatif, nous n'avons pas besoin d'interagir avec l'element parent*/
+/* Il sera relatif a l'element parent */
+.relative {
+    background-color: red;
+    top: 0;
+    left: 100;
+}
+
+/* le bloc sera fixe meme apres un scrool */
+.fixed {
+    background-color: green;
+    position: fixed;
+    top: 100px;  
+}
+
+/* la boîte est décalée par rapport à son ancêtre de défilement le plus proche */
+.sticky {
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+
+ 
+/* Exemple 02 */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+.blue { background-color: blue; }
+.red { background-color: red; }
+.green { background-color: green; }
+
+footer, header {
+    color: #fff;
+    text-align: center;
+    height: 100px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 5rem;
+}
+
+/* ce bloc sera fixer a l'ecran */
+footer {
+    background-color: #000;
+    position: sticky;
+    bottom: 0;
+    font-size: 3rem;
+
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a:visited {
+    color: white;
+}
+
+.social { 
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    width: 150px;
+    /* pour passer au dessus des autres blocs */
+    z-index: 1;
+}
+
+.social:hover{
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: royalblue;
+    position: fixed;
+    top: 30%;
+    left: 2%;
+}
+
+.instagram {
+    background-color: rgb(206, 96, 96);
+    position: fixed;
+    top: 37%;
+    left: 2%;
+}
+
+.whatapps {
+    background-color: green;
+    position: fixed;
+    top: 45%;
+    left: 2%; 
+}
+
+.info {
+    background-color: gray;
+    position: fixed;
+    top: 22%;
+    left: 2%; 
+}
+
+
+
+
+

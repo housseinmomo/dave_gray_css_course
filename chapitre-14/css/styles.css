@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh; /* full screen */
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+   
+    /* le flex doit se mettre au niveau du conteneur */
+    display: flex;
+
+    /* alignement horizontale  qui peux se faire soit a gauche (start) , a droite (end) ou au centre (center) du conteneur */
+    justify-content: flex-start;
+
+    /* alignement verticale haut bas centre */
+    align-items: center;
+
+    /* pour indiquer la direction des blocs */
+    /* default value: row */
+    /* flex-direction: row; */
+
+    /*responsive: eviter les debordement apres retrecisement de l'ecran */
+    /* flex-wrap: wrap; */
+
+    /* raccourcie pour flex-direction & flex-wrap */
+    flex-flow: row wrap;
+
+    
+
+    /* Vous pouvez utiliser align-content pour définir comment plusieurs lignes sont espacées de l'une à l'autre. */
+    align-content: space-evenly;
+
+    /* espacement entre des element */
+    gap: 1rem;
+}
+
+.box {
+    /* min-width: 100px; */
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    /*properties for flex container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*properties for flex items*/
+    flex-basis: 100px; /*min-width for each flex items*/
+
+    flex-grow: 1;
+}
+
+.box:nth-child(2) {
+    flex-grow: 2;
+}
